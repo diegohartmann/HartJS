@@ -1,18 +1,69 @@
 html,
 body {
+  background-color: var(--theme-1);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+  
+  }
 a {
-  color: inherit;
+  color: var(--theme-4);
   text-decoration: none;
 }
 * {
   box-sizing: border-box;
 }
 
+p,span,h1,h2,h3,h4,h5,h6{
+  color: var(--textColor)
+}
+
+.bg-1{background-color:var(--theme-1)}
+.bg-2{background-color:var(--theme-2)}
+.bg-3{background-color:var(--theme-3)}
+.bg-4{background-color:var(--theme-4)}
+.bg-5{background-color:var(--theme-5)}
+
+.color-1{color:var(--theme-1)}
+.color-2{color:var(--theme-2)}
+.color-3{color:var(--theme-3)}
+.color-4{color:var(--theme-4)}
+.color-5{color:var(--theme-5)}
+
+.border-color-1{border-color:var(--theme-1)}
+.border-color-2{border-color:var(--theme-2)}
+.border-color-3{border-color:var(--theme-3)}
+.border-color-4{border-color:var(--theme-4)}
+.border-color-5{border-color:var(--theme-5)}
+
+.flex{
+  display: flex;
+}
+.column{
+  flex-direction: column;
+}
+.column-reverse{
+  flex-direction: column-reverse;
+}
+.row{
+  flex-direction: row;
+}
+.row-reverse{
+  flex-direction: row-reverse;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+
+.grid-12{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+}
+.col-12{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+}
+/* .span-4{grid-template-column: 4fr} */
 
 body[data-theme="deep-purples-and-blues"]{
   --theme-1: #0C0032;
@@ -20,6 +71,8 @@ body[data-theme="deep-purples-and-blues"]{
   --theme-3: #240090;
   --theme-4: #3500D3;
   --theme-5: #282828;
+
+  --textColor: #fff
 }
 body[data-theme="contemporary-and-bold"]{
   --theme-1: #1A1A1D;
@@ -27,6 +80,8 @@ body[data-theme="contemporary-and-bold"]{
   --theme-3: #6F2232;
   --theme-4: #950740;
   --theme-5: #C3073F;
+
+  --textColor: #fff
 }
 
 body[data-theme="striking-and-simple"]{
@@ -35,4 +90,6 @@ body[data-theme="striking-and-simple"]{
   --theme-3: #C5C6C7;
   --theme-4: #66FCF1;
   --theme-5: #45A29E;
+
+  --textColor: #fff
 }
