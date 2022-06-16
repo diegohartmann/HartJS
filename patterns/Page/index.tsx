@@ -39,7 +39,11 @@ const Page: NextPage <props> = ({
     
     <div className={styles.container}>
       
-      <DocHead title={docHeadTitle} icon={docHeadIcon} description={docHeadDescription} author={docHeadAuthor}/>
+      <DocHead
+        title={docHeadTitle}
+        icon={docHeadIcon}
+        description={docHeadDescription}
+        author={docHeadAuthor}/>
 
       <main className={styles.main}>
         {content}
