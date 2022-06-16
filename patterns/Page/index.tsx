@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import type { NextPage } from 'next'
 import styles from './styles.module.css'
 import DocHead from '../DocHead'
@@ -23,7 +23,9 @@ interface props{
 }
 
 const Page: NextPage <props> = ({
-  documentTheme = theme.contemp,
+  // documentTheme = theme.contemp,
+  // documentTheme = theme.deep,
+  documentTheme = theme.simple,
   //HEAD
   docHeadAuthor=`Diego Hartmann`,
   docHeadIcon=`favicon.ico`,
@@ -39,17 +41,10 @@ const Page: NextPage <props> = ({
   footerImageHeight=16,
 }) => {
 
-  // const changeTheme = useTheme(theme.contemp)
-  const changeTheme = useTheme(theme.deep)
-  // const changeTheme = useTheme(theme.simple)
-
-  useEffect(()=>{
-    changeTheme()
-    //eslint-disable-next-line
-  },[])
+ 
+  useTheme(documentTheme)
   
   return (
-    
 
     <div className={styles.container}>
       

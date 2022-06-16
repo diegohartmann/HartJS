@@ -65,7 +65,7 @@ p,span,h1,h2,h3,h4,h5,h6{
 }
 /* .span-4{grid-template-column: 4fr} */
 
-body[data-theme="deep-purples-and-blues"]{
+html[data-theme="deep-purples-and-blues"]{
   --theme-1: #0C0032;
   --theme-2: #190061;
   --theme-3: #240090;
@@ -74,7 +74,7 @@ body[data-theme="deep-purples-and-blues"]{
 
   --textColor: #fff
 }
-body[data-theme="contemporary-and-bold"]{
+html[data-theme="contemporary-and-bold"]{
   --theme-1: #1A1A1D;
   --theme-2: #4E4E50;
   --theme-3: #6F2232;
@@ -84,7 +84,7 @@ body[data-theme="contemporary-and-bold"]{
   --textColor: #fff
 }
 
-body[data-theme="striking-and-simple"]{
+html[data-theme="striking-and-simple"]{
   --theme-1: #0B0C10;
   --theme-2: #1F2833;
   --theme-3: #C5C6C7;
