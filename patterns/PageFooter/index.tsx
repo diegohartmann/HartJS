@@ -9,7 +9,7 @@ interface props{
     imageHeight:number
 
 }
-const PageFooter = ({ href } : props) => {
+const PageFooter = ({ href, imageUrl, imageAlt, imageWidth, imageHeight } : props) => {
   return (
     <footer className={styles.footer}>
         <a
@@ -19,7 +19,7 @@ const PageFooter = ({ href } : props) => {
         >
             Powered by{' '}
             <span className={styles.logo}>
-                <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                <Image src={imageUrl} alt={imageAlt} width={imageWidth} height={imageHeight} />
             </span>
         </a>
     </footer>
