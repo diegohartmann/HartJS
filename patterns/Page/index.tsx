@@ -25,11 +25,11 @@ const Page: NextPage <props> = ({
   docHeadAuthor=`Diego Hartmann`,
   docHeadIcon=`favicon.ico`,
   docHeadTitle=`Hartt Template`,
-  docHeadDescription=`Project using Hartt NextJS Template from https://github.com/diegohartmann/hartt-template`,
+  docHeadDescription=`Project using NextJS Template "HartJS" from https://github.com/diegohartmann/HartJS`,
   //CONTENT
   content=<div>Page Content</div>,
   //FOOTER
-  footerHref=`https://github.com/diegohartmann/hartt-template`,
+  footerHref=`https://github.com/diegohartmann/HartJS`,
   footerImageUrl=`/vercel.svg`,
   footerImageAlt=`Vercel Logo`,
   footerImageWidth=72,
