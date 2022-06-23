@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
 import Page from '../patterns/Page'
 
+import * as lib from 'lib'
+
 const Home: NextPage = () => {
   return (
     <Page content={

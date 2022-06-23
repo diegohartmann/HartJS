@@ -12,19 +12,17 @@ export const isEmtpyArray       = (_array:[]) =>  !Array.isArray(_array)||_array
 export const biggestNumInArray  = (_array:[]) =>  _array.reduce((_anterior,_current)=> _anterior>_current?_anterior:_current);
 export const smallestNumInArray = (_array:[]) =>  _array.reduce((_anterior,_current)=> _anterior<_current?_anterior:_current);
 export const arrayBySelector    = (_nodeListSelector:string) =>  Array.from(document.querySelectorAll(_nodeListSelector));
-export const addToEndOfArray    = (_originalArray:[], _el:any) => {if(Array.isArray(_el)){_el.forEach(_e=>{_originalArray.push(_e)});return}_originalArray.push(_el)};
-export const addToStartOfArray  = (_originalArray:[], _el:any) => {if(Array.isArray(_el)){_el.reverse().forEach(_e=>{_originalArray.unshift(_e)});return}_originalArray.unshift(_el)};
 export const mergeTwoArrays = (_arr1:[], _arr2:[]) => _arr1.push.apply(_arr1, _arr2)
 export const getLastElementFrom = (_array:[] | string) => _array.slice(-1)
 
 //#endregion ARRAY
 
 //#region NUMBERS ==========================================================================================================================================================================================
-export const isEven             = (_n:number) =>  _n%2 == 0;
-export const sum                = (..._nums:[number]) =>  sumHelper(_nums);
-export const multiplicate       = (..._nums:[number]) =>  multHelper(_nums);
-export const randomFloatBetween = (_min:number, _max:number) =>  randomFloatHelper(_min,_max);
-export const randomIntBetween   = (_min:number, _max:number) =>  Math.floor(randomFloatHelper(_min,_max));
+export const isEven             = (_n:number) => _n%2 == 0;
+export const sum                = (..._nums:[number]) => sumHelper(_nums);
+export const multiplicate       = (..._nums:[number]) => multHelper(_nums);
+export const randomFloatBetween = (_min:number, _max:number) => randomFloatHelper(_min,_max);
+export const randomIntBetween   = (_min:number, _max:number) => Math.floor(randomFloatHelper(_min,_max));
 //#endregion NUMBER
 
 //#region HTML-ELEMENTS ==========================================================================================================================================================================================
