@@ -14,7 +14,6 @@ export const smallestNumInArray = (_array:[]) =>  _array.reduce((_anterior,_curr
 export const arrayBySelector    = (_nodeListSelector:string) =>  Array.from(document.querySelectorAll(_nodeListSelector));
 export const mergeTwoArrays = (_arr1:[], _arr2:[]) => _arr1.push.apply(_arr1, _arr2)
 export const getLastElementFrom = (_array:[] | string) => _array.slice(-1)
-
 //#endregion ARRAY
 
 //#region NUMBERS ==========================================================================================================================================================================================

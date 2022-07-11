@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 import DocHead from '../DocHead'
 import PageFooter from '../PageFooter'
 import theme from '../../lib/enums/theme'
+
 interface props{
   documentTheme?: theme,
   //HEAD
@@ -39,7 +40,8 @@ const Page: NextPage <props> = ({
   footerImageWidth=72,
   footerImageHeight=16,
 }) => {
-  
+
+
   return (
 
     <div className={styles.container}>
