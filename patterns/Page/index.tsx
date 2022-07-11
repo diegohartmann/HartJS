@@ -27,7 +27,7 @@ const Page: NextPage <props> = ({
   documentTheme = theme.simple,
   //HEAD
   docHeadAuthor=`Diego Hartmann`,
-  docHeadIcon=`favicon.ico`,
+  docHeadIcon=`/favicon.ico`,
   docHeadTitle=`Hartt Template`,
   docHeadDescription=`Project using NextJS Template "HartJS" from https://github.com/diegohartmann/HartJS`,
   //CONTENT
