@@ -1,13 +1,14 @@
-import { Button } from '@mui/material'
 import React from 'react'
 import Page from '../patterns/Page'
-
+import * as lib from '../lib'
+import CountrySelector from '../components/Selectors/CountrySelector'
 const About = () => {
   return <Page content={<>
-
-    <Button variant="text">Text</Button>
-   <Button variant="contained">Contained</Button>
-    <Button variant="outlined">Outlined</Button>
+    <CountrySelector onChange={(e:any)=>{
+      if(e.target.innerText){
+        console.log( lib.getLastElementFrom(e.target.innerText.split(`+`)) )
+      }
+    }}/>
   </>}/>
 }
 
