@@ -18,9 +18,8 @@ const useFetch = (url:string) => {
 
     const fetchData = useCallback(async()=>{
         try{
-            const response = await axios.get(url, {
-                cancelToken: cancelTokenSource.token
-            })
+            // const response = await axios.get(url, {cancelToken: cancelTokenSource.token})
+            const response = await axios.get(url)
             const data = await response.data;
             if(data){
                 setFetchedData({
@@ -31,9 +30,9 @@ const useFetch = (url:string) => {
             }
         }catch(e){
             if(axios.isCancel(e)){
-                console.log(`Fetching data aborted`);
+                console.log(`Fetching data aborted: `, e);
             }else{
-                console.log(`Error ocurred`);
+                console.log(`Error ocurred: `, e);
             }
             setFetchedData({
                 data: [],
